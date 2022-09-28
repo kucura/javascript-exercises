@@ -1,9 +1,12 @@
-const ftoc = function() {
-
+let temp = 0
+const ftoc = function(number) {
+  let temp = (number-32)*5/9
+  return Math.round(temp*10)/10
 };
 
-const ctof = function() {
-
+const ctof = function(number) {
+  let temp = (number*9/5)+32
+  return Math.round(temp*10)/10
 };
 
 // Do not edit below this line
